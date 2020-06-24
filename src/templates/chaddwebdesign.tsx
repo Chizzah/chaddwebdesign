@@ -8,11 +8,11 @@ import Contact from "../components/contact"
 
 const ChaddWeb = () => (
   <Layout>
-    <Parallax pages={5}>
+    <Parallax pages={6}>
       <Hero offset={0} factor={1} />
-      <About offset={1.25} factor={2} />
-      <Projects offset={2.75} factor={2} />
-      <Contact offset={4} factor={1} />
+      <About offset={1.5} factor={2} />
+      <Projects offset={3.25} factor={2} />
+      <Contact offset={5} factor={1} />
     </Parallax>
   </Layout>
 )

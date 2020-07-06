@@ -4,10 +4,13 @@ const mdx = true
 module.exports = {
   siteMetadata: {
     siteTitle: `Chadd Web Design`,
+    siteTitleAlt: `Chadd Web Design - Gain a competitive edge in the online world`,
+    siteHeadline: `Chadd Web Design - Gain a competitive edge in the online world`,
     siteUrl: `https://chaddwebdesign.co.za`,
     siteDescription: `I help entrepreneurs gain a competitive edge in the online world with my web design and pay-per-click campaign management services.`,
     siteLanguage: `en-ZA`,
-    author: `Chadd Poggenpoel <chaddwebdesign@gmail.com>`,
+    siteImage: `/social.png`,
+    author: `Chadd Poggenpoel <info@chaddwebdesign.co.za>`,
     basePath,
   },
   plugins: [

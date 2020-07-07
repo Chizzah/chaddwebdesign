@@ -33,13 +33,13 @@ const SEO = ({
     >
       <html lang={siteLanguage} />
       <meta name="description" content={seo.description} />
-      <meta name="image" content="https://chaddwebdesign.co.za/banner.jpg" />
+      <meta name="image" content="https://chaddwebdesign.co.za/banner.png" />
       <meta property="og:title" content={seo.title} />
       <meta property="og:url" content={seo.url} />
       <meta property="og:description" content={seo.description} />
       <meta
         property="og:image"
-        content="https://chaddwebdesign.co.za/banner.jpg"
+        content="https://chaddwebdesign.co.za/banner.png"
       />
       <meta property="og:type" content="website" />
       <meta property="og:image:alt" content={seo.description} />
@@ -49,7 +49,7 @@ const SEO = ({
       <meta name="twitter:description" content={seo.description} />
       <meta
         name="twitter:image"
-        content="https://chaddwebdesign.co.za/banner.jpg"
+        content="https://chaddwebdesign.co.za/banner.png"
       />
       <meta name="twitter:image:alt" content={seo.description} />
       <meta name="twitter:creator" content={author} />

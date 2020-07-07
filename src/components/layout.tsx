@@ -28,10 +28,7 @@ const Layout = ({ children, className }: LayoutProps) => (
         },
       })}
     />
-    <SEO
-      title="Chadd Web Design - I help entrepreneurs gain a competitive edge."
-      image="/social.png"
-    />
+    <SEO title="Chadd Web Design - I help entrepreneurs gain a competitive edge." />
     <main className={className}>{children}</main>
   </React.Fragment>
 )

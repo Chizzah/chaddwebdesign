@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet"
 import { withPrefix } from "gatsby"
 import useSiteMetadata from "../hooks/use-site-metadata"
 
-import Banner from "/banner.jpg"
+import Banner from "../../static/banner.jpg"
 
 const SEO = ({
   title = ``,

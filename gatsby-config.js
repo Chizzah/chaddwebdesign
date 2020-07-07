@@ -9,7 +9,6 @@ module.exports = {
     siteUrl: `https://chaddwebdesign.co.za`,
     siteDescription: `I help entrepreneurs gain a competitive edge in the online world with my web design and pay-per-click campaign management services.`,
     siteLanguage: `en-ZA`,
-    siteImage: `/resources/banner.jpg`,
     author: `Chadd Poggenpoel <info@chaddwebdesign.co.za>`,
     basePath,
   },

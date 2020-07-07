@@ -9,7 +9,6 @@ type UseSiteMetadataProps = {
       siteUrl: string
       siteDescription: string
       siteLanguage: string
-      siteImage: string
       author: string
       [key: string]: unknown
     }

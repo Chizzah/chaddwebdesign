@@ -3,13 +3,6 @@ import { Helmet } from "react-helmet"
 import { withPrefix } from "gatsby"
 import useSiteMetadata from "../hooks/use-site-metadata"
 
-const defaultProps = {
-  title: ``,
-  description: false,
-  pathname: false,
-  children: null,
-}
-
 type Props = {
   title?: string
   description?: string
@@ -18,7 +11,13 @@ type Props = {
   children?: React.ReactNode
 }
 
-const SEO = ({ title, description, pathname, children }: Props) => {
+const SEO = ({
+  title = ``,
+  description = ``,
+  pathname = ``,
+  image = ``,
+  children = null,
+}: Props) => {
   const site = useSiteMetadata()
 
   const {
@@ -27,6 +26,7 @@ const SEO = ({ title, description, pathname, children }: Props) => {
     siteUrl,
     siteDescription: defaultDescription,
     siteLanguage,
+    siteImage: defaultImage,
     author,
   } = site
 
@@ -34,6 +34,7 @@ const SEO = ({ title, description, pathname, children }: Props) => {
     title: title || defaultTitle,
     description: description || defaultDescription,
     url: `${siteUrl}${pathname || ``}`,
+    image: `${siteUrl}${image || defaultImage}`,
   }
   return (
     <Helmet
@@ -43,18 +44,18 @@ const SEO = ({ title, description, pathname, children }: Props) => {
     >
       <html lang={siteLanguage} />
       <meta name="description" content={seo.description} />
-      <meta name="image" content="/social.png" />
+      <meta name="image" content={seo.image} />
       <meta property="og:title" content={seo.title} />
       <meta property="og:url" content={seo.url} />
       <meta property="og:description" content={seo.description} />
-      <meta property="og:image" content="/social.png" />
+      <meta property="og:image" content={seo.image} />
       <meta property="og:type" content="website" />
       <meta property="og:image:alt" content={seo.description} />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={seo.title} />
       <meta name="twitter:url" content={seo.url} />
       <meta name="twitter:description" content={seo.description} />
-      <meta name="twitter:image" content="/social.png" />
+      <meta name="twitter:image" content={seo.image} />
       <meta name="twitter:image:alt" content={seo.description} />
       <meta name="twitter:creator" content={author} />
       <meta name="gatsby-theme" content="@lekoarts/gatsby-theme-cara" />
@@ -81,5 +82,3 @@ const SEO = ({ title, description, pathname, children }: Props) => {
 }
 
 export default SEO
-
-SEO.defaultProps = defaultProps

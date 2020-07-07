@@ -9,7 +9,7 @@ type LayoutProps = { children?: React.ReactNode; className?: string }
 const Layout = ({ children, className }: LayoutProps) => (
   <React.Fragment>
     <Global
-      styles={(theme) => ({
+      styles={theme => ({
         "*": {
           boxSizing: `inherit`,
           "&:before": {
@@ -28,7 +28,10 @@ const Layout = ({ children, className }: LayoutProps) => (
         },
       })}
     />
-    <SEO />
+    <SEO
+      title="Chadd Web Design - I help entrepreneurs gain a competitive edge."
+      image="../../resources/social.png"
+    />
     <main className={className}>{children}</main>
   </React.Fragment>
 )

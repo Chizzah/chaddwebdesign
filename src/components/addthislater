@@ -1,0 +1,15 @@
+<ProjectCard
+  title="Ryan's Photography"
+  link="https://ryansphotography.co.za"
+  bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
+>
+  A production photography website using Gatsby + Forestry.
+</ProjectCard>
+
+<ProjectCard
+  title="Gansbaai Academia"
+  link="https://gansbaai-academia.co.za"
+  bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
+>
+  A production school website using Gridsome + Contentful.
+</ProjectCard>
